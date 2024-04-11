@@ -1,0 +1,65 @@
+{
+  "name": "nova-pasta",
+  "version": "1.0.0",
+  "description": "[![N|Solid](https://www.cypress.io/images/layouts/navbar-brand.svg)](https://www.cypress.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "run:dev": "npx cypress run --config baseUrl=https://dev-portal.adiantesa.com --env env=DEV --spec \"cypress/e2e/Operation.cy.js,cypress/e2e/Portal.cy.js\"",
+    "run:qa": "npx cypress run --record --config baseUrl=https://qa-portal.adiantesa.com --env env=QA",
+    "run:hml": "npx cypress run --record --config baseUrl=https://hml-portal.adiantesa.com --env env=HML",
+    "run:prod": "npx cypress run --record --config baseUrl=https://portal.adiantesa.com --env env=PROD",
+    "open:dev": "npx cypress open --config baseUrl=https://dev-portal.adiantesa.com --env env=DEV",
+    "open:qa": "npx cypress open --config baseUrl=https://qa-portal.adiantesa.com --env env=QA",
+    "open:hml": "npx cypress open --config baseUrl=https://hml-portal.adiantesa.com --env env=HML",
+    "open:prod": "npx cypress open --config baseUrl=https://portal.adiantesa.com --env env=PROD",
+    "apiOpen:qa": "npx cypress open --config baseUrl=https://qa-gateway.adiantesa.com --env end=QA",
+    "apiOpen:dev": "npx cypress open --config baseUrl=https://dev-gateway.adiantesa.com --end end=DEV",
+    "apiRun:dev": "npx cypress open --config baseUrl=https://dev-gateway.adiantesa.com --end end=",
+    "apiRun:qa": "npx cypress open --spec cypress/e2e/backend/RegisterBackend.cy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "cypress-dotenv": "^2.0.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mailosaur": "^2.13.0",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-tesults-reporter": "1.2.0",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "assert": "^2.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify-fs": "^1.0.0",
+    "constants-browserify": "^1.0.0",
+    "crypto-js": "^4.1.1",
+    "cypress-plugin-xhr-toggle": "^1.0.0",
+    "cypress-react-selector": "^3.0.0",
+    "fs-extra": "^11.1.0",
+    "https-browserify": "^1.0.0",
+    "mocha": "^10.2.0",
+    "mysql": "github:mysqljs/mysql",
+    "node-fetch": "^3.3.0",
+    "node-modules": "^0.0.1",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tesults": "^1.1.3",
+    "util": "^0.12.0",
+    "vm-browserify": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grupo-GCB/adiante-tests-cypress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grupo-GCB/adiante-tests-cypress/issues"
+  },
+  "homepage": "https://github.com/Grupo-GCB/adiante-tests-cypress#readme"
+}
