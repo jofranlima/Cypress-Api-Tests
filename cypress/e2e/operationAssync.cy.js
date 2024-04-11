@@ -16,7 +16,7 @@ beforeEach(() => {
 it.only('Valid Operation', () => {
     Upload.oneNFeUpload();
 
-    // Usamos cy.wrap para criar uma promessa e esperamos a resolução dela
+ 
     cy.wrap(operation.operation()).then(() => {
        
         
