@@ -18,19 +18,7 @@
 ```
 $ npx cypress run
 ```
-#### Run test headless mode in a specific environment
-> "HML is default environment"
 
-### Run test grep tags.
-
-> Example: 
-```
-$ set CYPRESS_ENV=dev&& npx cypress run --env grepTags=@tag
-```
-
-```
-$ set CYPRESS_ENV=dev&& npx cypress run --spec cypress/e2e/squadAquisicao/*js --env grepTags=@tag
-```
 
 ### Run test interface mode and display cypress playground.
 
