@@ -1,4 +1,4 @@
-# ADIANTE GCB AUTOMATION TESTS 
+# CYPRESS AUTOMATION TESTS 
 
 > Automation project using cypress
 
