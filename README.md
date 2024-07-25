@@ -3,6 +3,19 @@
 > Automation project using cypress
 
 ---
+## Structure 
+
+#### configs 
+ Folder with routes.js 
+
+#### e2e
+ Folder with tests
+
+#### configs 
+ Page objects structure
+
+#### support
+ Folder with CNPJ generator, fake data generator and test summary
 
 ## Installation
 
@@ -29,7 +42,7 @@ $ npx cypress open
 or 
 
 ```
-$ set CYPRESS_ENV=qa&& npx cypress open
+$ set CYPRESS_ENV=qa && npx cypress open
 ```
 
 ---
